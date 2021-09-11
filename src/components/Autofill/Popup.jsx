@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-class Index extends Component {
+class Popup extends Component {
   state = {
     query: '',
     values: '',
@@ -33,7 +33,7 @@ class Index extends Component {
 
   render() {
     return (
-      <form>
+      <form className="form">
         <input
           type="text"
           placeholder="Pincode"
@@ -53,9 +53,10 @@ class Index extends Component {
         <input type="text" placeholder="District" value={this.state.values.District} disabled={this.state.disabled} />
         <br />
         <button onClick={this.handleClick}>Click</button>
+        <button onClick={this.props.closePopup}>close me</button>
       </form>
     );
   }
 }
 
-export default Index;
+export default Popup;

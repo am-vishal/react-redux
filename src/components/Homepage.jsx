@@ -7,7 +7,7 @@ const Homepage = () => {
       <h1>Hooks {'&'} Redux</h1>
       <ul>
         <li>
-          <Link to="/pincode">Pincode</Link>
+          <Link to="/autofill">Autofill</Link>
         </li>
         <li>
           <Link to="/popup">Popup</Link>

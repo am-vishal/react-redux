@@ -1,7 +1,7 @@
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 import Homepage from 'components/Homepage';
-import Pincode from 'components/Index';
-import Popup from 'components/Popup';
+import Autofill from 'components/Autofill/Index';
+import Popup from 'components/Autofill/Popup';
 import ReduxTest from 'components/ReduxTest/ReduxTest';
 import Context from 'components/useContext/Parent';
 import Callback from 'components/useCallback/ParentComponent';
@@ -11,7 +11,7 @@ function App() {
     <Router>
       <Route exact path="/" component={Homepage} />
       <Route path="/redux" component={ReduxTest} />
-      <Route path="/pincode" component={Pincode} />
+      <Route path="/autofill" component={Autofill} />
       <Route path="/context" component={Context} />
       <Route path="/callback" component={Callback} />
       <Route path="/memo" component={MemoComp} />
