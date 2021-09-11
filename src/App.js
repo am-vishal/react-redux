@@ -6,6 +6,7 @@ import ReduxTest from 'components/ReduxTest/ReduxTest';
 import Context from 'components/useContext/Parent';
 import Callback from 'components/useCallback/ParentComponent';
 import MemoComp from 'components/useMemo/MemoComp';
+import LocalStorage from 'components/LocalStorage/LocalStorage';
 function App() {
   return (
     <Router>
@@ -16,6 +17,7 @@ function App() {
       <Route path="/callback" component={Callback} />
       <Route path="/memo" component={MemoComp} />
       <Route path="/popup" component={Popup} />
+      <Route path="/localstorage" component={LocalStorage} />
     </Router>
   );
 }

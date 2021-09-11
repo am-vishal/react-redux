@@ -24,6 +24,9 @@ const Homepage = () => {
         <li>
           <Link to="/reducer">useReducer Hook</Link>
         </li>
+        <li>
+          <Link to="/localstorage">Local Storage</Link>
+        </li>
       </ul>
     </div>
   );
