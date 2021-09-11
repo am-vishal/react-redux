@@ -7,6 +7,7 @@ import Context from 'components/useContext/Parent';
 import Callback from 'components/useCallback/ParentComponent';
 import MemoComp from 'components/useMemo/MemoComp';
 import LocalStorage from 'components/LocalStorage/LocalStorage';
+import RefAndLayoutEffect from 'components/useRef&useLayoutEffect/RefAndLayoutEffect';
 function App() {
   return (
     <Router>
@@ -18,6 +19,7 @@ function App() {
       <Route path="/memo" component={MemoComp} />
       <Route path="/popup" component={Popup} />
       <Route path="/localstorage" component={LocalStorage} />
+      <Route path="/ref" component={RefAndLayoutEffect} />
     </Router>
   );
 }
