@@ -27,6 +27,9 @@ const Homepage = () => {
         <li>
           <Link to="/localstorage">Local Storage</Link>
         </li>
+        <li>
+          <Link to="/effect">useEffect Hook</Link>
+        </li>
       </ul>
     </div>
   );
