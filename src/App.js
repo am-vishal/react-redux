@@ -9,6 +9,7 @@ import MemoComp from 'components/useMemo/MemoComp';
 import LocalStorage from 'components/LocalStorage/LocalStorage';
 import RefAndLayoutEffect from 'components/useRef&useLayoutEffect/RefAndLayoutEffect';
 import UseEffect from 'components/useEffect/UseEffect';
+import UseReducer from 'components/useReducer/UseReducer';
 function App() {
   return (
     <Router>
@@ -22,6 +23,7 @@ function App() {
       <Route path="/localstorage" component={LocalStorage} />
       <Route path="/ref" component={RefAndLayoutEffect} />
       <Route path="/effect" component={UseEffect} />
+      <Route path="/reducer" component={UseReducer} />
     </Router>
   );
 }

@@ -1,7 +1,11 @@
-import React from 'react';
+import React, {useReducer} from 'react';
 
-const useReducer = () => {
-  return <div>const [state, dispatch] = useReducer(reducer, initialState, init)</div>;
+const UseReducer = () => {
+  return (
+    <div>
+      <h1>useReducer</h1>
+    </div>
+  );
 };
 
-export default useReducer;
+export default UseReducer;

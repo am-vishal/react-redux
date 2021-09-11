@@ -30,6 +30,9 @@ const Homepage = () => {
         <li>
           <Link to="/effect">useEffect Hook</Link>
         </li>
+        <li>
+          <Link to="/reducer">useReducer Hook</Link>
+        </li>
       </ul>
     </div>
   );
