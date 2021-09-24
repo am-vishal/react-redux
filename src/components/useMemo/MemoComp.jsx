@@ -35,6 +35,22 @@ const MemoComp = () => {
         pointing to same memory spot that's what useCall back does pointing to same function so it won't repeat
       </pre>
       <p>useCallback actually does not need callback fun() useMemo does</p>
+
+      <pre>
+        {`
+          import React, {useState} from 'react';
+          const ReactuseMemo = () => {
+            function useMemo() {
+              const [count, setCount] = useState(60);
+              const expensiveCount = useMemo(() => {
+                return count ** 2;
+              }, [count]); // recompute when count changes.
+            }
+            return <div></div>;
+          };
+        `}
+        // export default ReactuseMemo;
+      </pre>
     </div>
   );
 };
