@@ -33,6 +33,9 @@ const Homepage = () => {
         <li>
           <Link to="/reducer">useReducer Hook</Link>
         </li>
+        <li>
+          <Link to="/cr">useContext And useReducer Hook(Not Completed)</Link>
+        </li>
       </ul>
     </div>
   );

@@ -10,7 +10,15 @@ import LocalStorage from 'components/LocalStorage/LocalStorage';
 import RefAndLayoutEffect from 'components/useRef&useLayoutEffect/RefAndLayoutEffect';
 import UseEffect from 'components/useEffect/UseEffect';
 import UseReducer from 'components/useReducer/UseReducer';
+import ParentComp from 'components/useContext&useReducer/ParentComp';
+
+import {connect} from 'react-redux';
+import {SimpleAction} from './components/ReduxTest/action/SimpleAction';
+
 function App() {
+  const handleAcrion = (event) => {
+    SimpleAction();
+  };
   return (
     <Router>
       <Route exact path="/" component={Homepage} />
@@ -24,8 +32,18 @@ function App() {
       <Route path="/ref" component={RefAndLayoutEffect} />
       <Route path="/effect" component={UseEffect} />
       <Route path="/reducer" component={UseReducer} />
+      <Route path="/cr" component={ParentComp} />
+      <pre>{JSON.stringify(this.props)}</pre>
+      <button onClick={handleAcrion}>Test redux action</button>
     </Router>
   );
 }
 
-export default App;
+const mapStateToProps = (state) => ({
+  ...state,
+});
+const mapDispatchToProps = (dispatch) => ({
+  SimpleAction: () => dispatch(SimpleAction()),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
