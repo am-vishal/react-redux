@@ -1,24 +1,26 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 
 const LocalStorage = () => {
   const [value, setValue] = useState(0);
-  const ls = localStorage.setItem('key', JSON.stringify(value));
-  const lsd = localStorage.getItem('key');
-  console.log(lsd);
+  const setItemLS = localStorage.setItem('key', JSON.stringify(value));
+  const getItemLS = localStorage.getItem('key');
+  console.log(setItemLS, getItemLS);
 
-  const ss = sessionStorage.setItem('sesion', 'sStorage');
-  const sssd = sessionStorage.getItem('sesion');
-  console.log(sssd);
+  const setItemSS = sessionStorage.setItem('sesion', 'sStorage');
+  const getItemSS = sessionStorage.getItem('sesion');
+  console.log(setItemSS, getItemSS);
 
-  const handleClick = () => {};
+  const handleClick = () => {
+    setValue(1)
+  };
 
   return (
     <div>
       <input type="text" value={value} />
       <button onClick={handleClick}>CLickl</button>
-      {lsd}
+      {getItemLS}
       <br />
-      {sssd}
+      {getItemSS}
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 class Popup extends Component {
   state = {
     query: '',
@@ -7,7 +7,7 @@ class Popup extends Component {
   };
 
   onChangeHandle = (e) => {
-    const {value} = e.target;
+    const { value } = e.target;
     if (value.length === 6) {
       this.setState({
         query: value,
@@ -24,8 +24,8 @@ class Popup extends Component {
       .then((data) => {
         data?.map((val, i) => {
           if (val.Status === 'Success') {
-            this.setState({values: val.PostOffice[0]});
-            this.setState({disabled: !this.state.disabled});
+            this.setState({ values: val.PostOffice[0] });
+            this.setState({ disabled: !this.state.disabled });
           }
         });
       });
