@@ -1,4 +1,4 @@
-import React, {useReducer} from 'react';
+import React, { useReducer } from 'react';
 
 let initialState = 0;
 function reducer(state, action) {
@@ -17,8 +17,8 @@ const UseReducer = () => {
     <div>
       <h1>useReducer Hook</h1>
       <p>Count: {count}</p>
-      <button onClick={() => dispatch({type: 'INCR'})}>Increment</button>
-      <button onClick={() => dispatch({type: 'DECR'})}>Decrement</button>
+      <button onClick={() => dispatch({ type: 'INCR' })}>Increment</button>
+      <button onClick={() => dispatch({ type: 'DECR' })}>Decrement</button>
     </div>
   );
 };

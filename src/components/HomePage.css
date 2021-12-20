@@ -1,0 +1,12 @@
+ol > li {
+  font-size: 25px;
+  margin: 0.8em;
+  font-family: 'Lucida Console', 'Courier New', monospace;
+}
+ol > li > * {
+  text-decoration: none;
+  cursor: pointer;
+}
+ol > li > *:hover {
+  text-decoration: underline;
+}

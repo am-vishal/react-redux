@@ -1,4 +1,4 @@
-import {ColorContext} from 'components/useContext&useReducer/ParentComp';
+import { ColorContext } from 'components/useContextWithReducer/ParentComp';
 import React from 'react';
 
 const GrandChild1 = () => {

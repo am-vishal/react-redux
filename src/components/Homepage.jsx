@@ -1,11 +1,12 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import './HomePage.css'
 
 const Homepage = () => {
   return (
     <div>
       <h1>Hooks {'&'} Redux</h1>
-      <ul>
+      <ol>
         <li>
           <Link to="/autofill">Autofill</Link>
         </li>
@@ -13,7 +14,13 @@ const Homepage = () => {
           <Link to="/popup">Popup</Link>
         </li>
         <li>
-          <Link to="/redux">redux</Link>
+          <Link to="/localstorage">Local Storage</Link>
+        </li>
+        <li>
+          <Link to="/state">useState Hook</Link>
+        </li>
+        <li>
+          <Link to="/effect">useEffect Hook</Link>
         </li>
         <li>
           <Link to="/callback">useCallback Hook</Link>
@@ -25,18 +32,12 @@ const Homepage = () => {
           <Link to="/reducer">useReducer Hook</Link>
         </li>
         <li>
-          <Link to="/localstorage">Local Storage</Link>
+          <Link to="/contextwithreducer">useContext And useReducer Hook</Link>
         </li>
         <li>
-          <Link to="/effect">useEffect Hook</Link>
+          <Link to="/redux">redux</Link>
         </li>
-        <li>
-          <Link to="/reducer">useReducer Hook</Link>
-        </li>
-        <li>
-          <Link to="/cr">useContext And useReducer Hook(Not Completed)</Link>
-        </li>
-      </ul>
+      </ol>
     </div>
   );
 };

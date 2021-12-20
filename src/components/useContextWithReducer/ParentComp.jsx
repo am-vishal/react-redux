@@ -1,5 +1,5 @@
-import React, {createContext} from 'react';
-import GrandChild1 from './Child1/GrandChild1.jsx/GrandChild1';
+import React, { createContext } from 'react';
+import GrandChild1 from './Child1/GrandChild1/GrandChild1';
 
 const ColorContext = createContext();
 const ParentComp = () => {
@@ -14,4 +14,4 @@ const ParentComp = () => {
 };
 
 export default ParentComp;
-export {ColorContext};
+export { ColorContext };
