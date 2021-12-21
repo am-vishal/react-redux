@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
 import Homepage from 'components/Homepage';
 import Autofill from 'components/Autofill/Index';
 import Popup from 'components/Autofill/Popup';
@@ -12,8 +12,9 @@ import UseState from 'components/useState/UseState';
 import UseEffect from 'components/useEffect/UseEffect';
 import UseReducer from 'components/useReducer/useReducer';
 import useContextWithReducer from 'components/useContextWithReducer/ParentComp';
+import useContextWithReducer2 from 'components/useContextWithReducer2/Parent';
 
-import { connect } from 'react-redux';
+import {connect} from 'react-redux';
 // import { SimpleAction } from './components/ReduxTest/action/SimpleAction';
 
 const App = () => {
@@ -35,9 +36,10 @@ const App = () => {
       <Route path="/ref" component={RefAndLayoutEffect} />
       <Route path="/redux" component={ReduxTest} />
       <Route path="/contextwithreducer" component={useContextWithReducer} />
+      <Route path="/contextwithreducer2" component={useContextWithReducer2} />
     </Router>
   );
-}
+};
 
 const mapStateToProps = (state) => ({
   ...state,

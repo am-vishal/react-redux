@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import './HomePage.css'
+import {Link} from 'react-router-dom';
+import './HomePage.css';
 
 const Homepage = () => {
   return (
@@ -30,6 +30,12 @@ const Homepage = () => {
         </li>
         <li>
           <Link to="/reducer">useReducer Hook</Link>
+        </li>
+        <li>
+          <Link to="/contextwithreducer">useContext And useReducer Hook</Link>
+        </li>
+        <li>
+          <Link to="/contextwithreducer2">useContext And useReducer Hook - 2</Link>
         </li>
         <li>
           <Link to="/contextwithreducer">useContext And useReducer Hook</Link>
